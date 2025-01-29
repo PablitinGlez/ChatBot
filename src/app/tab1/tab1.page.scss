@@ -1,0 +1,65 @@
+/* Establecer el color de fondo del ion-toolbar */
+
+:root{
+    --ion-color-primary: #8fb9dc; /* Azul claro */
+    --ion-color-primary-contrast: #ffffff; /* Color de texto blanco */
+    --ion-color-primary-shade: #090A0B; /* Gris oscuro */
+    --ion-color-primary-tint: #1F2021; /* Gris claro */
+
+    --ion-color-secondary: #0B1014; /* Azul claro */
+    --ion-color-secondary-contrast: #ffffff; /* Color de texto blanco */
+    --ion-color-secondary-shade: #090A0B; /* Gris oscuro */
+    --ion-color-secondary-tint: #1F2021; /* Gris claro */
+}
+
+
+
+ion-toolbar {
+    --background: #0B1014;
+    --color: white;
+    /* Para el texto */
+}
+
+/* Establecer el color de fondo del ion-content */
+ion-content {
+    --background: #0B1014;
+    --color: white;
+    /* Para el texto */
+}
+
+/* Establecer el color de fondo de ion-list */
+ion-list {
+    --background: #0B1014;
+    --color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Establecer el color de fondo del ion-searchbar a un gris suave */
+ion-searchbar {
+    --background: #333232;
+    /* Gris claro */
+    --border-radius: 20px;
+    width:90%;
+    --placeholder-color: #666666;
+    /* Gris oscuro para el texto del placeholder */
+    --color: #333333;
+    /* Gris oscuro para el texto */
+    --border-color: #ccc;
+    /* Color de borde gris */
+    color: #333333 !important;
+    /* Asegura que el texto del searchbar sea gris oscuro */
+}
+ion-badge {
+    --background: #333232 !important;
+    /* Gris oscuro similar al searchbar */
+    --color: rgb(107, 107, 107);
+    /* Color del texto blanco */
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    /* Agregar padding alrededor del texto */
+}

@@ -1,9 +1,6 @@
-<ion-header [translucent]="true">
- <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="primary">
     <ion-buttons slot="secondary">
-      <ion-button>
-        <ion-icon slot="icon-only" name="camera"> </ion-icon>
-      </ion-button>
       <ion-button>
         <ion-icon slot="icon-only" name="search"> </ion-icon>
       </ion-button>
@@ -17,14 +14,25 @@
         ></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Chat Bot</ion-title>
+    <ion-title>WhatsApp</ion-title>
   </ion-toolbar>
+
+  <ion-searchbar></ion-searchbar>
+  <ion-badge>Todos</ion-badge>
+  <ion-badge>No leidos</ion-badge>
+  <ion-badge>Favoritos</ion-badge>
+  <ion-badge>Grupos</ion-badge>
+  <ion-badge>+</ion-badge>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-   <ion-list> 
-    <app-item-chat username="Juan Pablo" message="Welcome" dates="13:21" avatarURL="https://ionicframework.com/docs/img/demos/avatar.svg"></app-item-chat>
+  <ion-list>
+    <app-item-chat
+      *ngFor="let chat of chats"
+      [username]="chat.username"
+      [message]="chat.message"
+      [dates]="chat.dates"
+      [avatarURL]="chat.avatarURL"
+    ></app-item-chat>
   </ion-list>
-
-  
 </ion-content>
