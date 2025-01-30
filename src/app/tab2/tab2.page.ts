@@ -11,52 +11,62 @@ export class Tab2Page {
     {
       username: 'Juan',
       fecha: 'Hoy, 9:00 AM',
-      avatarURL: 'https://randomuser.me/api/portraits/men/1.jpg',
-      estadoURL: 'https://source.unsplash.com/200x300/?city',
+      avatarURL:
+        'https://th.bing.com/th/id/OIP.Mag0h7rr1UTjLXBS0mqQgwHaHa?rs=1&pid=ImgDetMain',
+      estadoURL:
+        'https://th.bing.com/th/id/OIP.mO71r1oZ1wgIRf5RMR2VfwHaEo?rs=1&pid=ImgDetMain',
     },
     {
       username: 'María',
       fecha: 'Hoy, 10:30 AM',
-      avatarURL: 'https://randomuser.me/api/portraits/women/2.jpg',
-      estadoURL: 'https://source.unsplash.com/200x300/?city',
+      avatarURL: 'https://cdn-icons-png.flaticon.com/512/147/147135.png',
+      estadoURL:
+        'https://th.bing.com/th/id/OIP.TMNjzzPu23FYRPfuQkmK-wHaE8?rs=1&pid=ImgDetMain',
     },
     {
       username: 'Carlos',
       fecha: 'Ayer, 8:15 PM',
-      avatarURL: 'https://randomuser.me/api/portraits/men/3.jpg',
-      estadoURL: 'https://source.unsplash.com/200x300/?concert',
+      avatarURL: 'https://cdn-icons-png.flaticon.com/512/147/147140.png',
+      estadoURL:
+        'https://th.bing.com/th/id/R.7d1f8b9d5e8b9d324479375f38ffc121?rik=jGk%2b6gxBDnSXCA&pid=ImgRaw&r=0',
     },
     {
       username: 'Ana',
       fecha: 'Ayer, 6:45 PM',
-      avatarURL: 'https://randomuser.me/api/portraits/women/4.jpg',
-      estadoURL: 'https://source.unsplash.com/200x300/?park',
+      avatarURL:
+        'https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png',
+      estadoURL:
+        'https://th.bing.com/th/id/R.38d47af98358f1ce18a7562c94f0504b?rik=i8WctcmaXrJEDw&pid=ImgRaw&r=0',
     },
   ];
 
   comunidades = [
     {
-      nombre: 'Desarrolladores Web',
+      nombre: 'Midudev',
       mensaje: 'Nuevos recursos de programación disponibles',
-      logoURL: 'https://source.unsplash.com/50x50/?technology',
+      logoURL:
+        'https://th.bing.com/th/id/OIP.MFfkJoJjTRJ1VGCfxrEXBAAAAA?rs=1&pid=ImgDetMain',
       fecha: 'Hoy',
     },
     {
-      nombre: 'Gamers Unidos',
-      mensaje: 'Nuevo torneo anunciado, ¡inscríbete ya!',
-      logoURL: 'https://source.unsplash.com/50x50/?gaming',
+      nombre: 'Mouredev',
+      mensaje: 'Nuevos recursos de programación disponibles',
+      logoURL:
+        'https://th.bing.com/th/id/OIP.cSK2leXwG4zf3PZuGs1ERQHaHa?rs=1&pid=ImgDetMain',
       fecha: 'Ayer',
     },
     {
-      nombre: 'Amantes del Cine',
-      mensaje: '¿Qué película recomiendan ver este fin de semana?',
-      logoURL: 'https://source.unsplash.com/50x50/?cinema',
+      nombre: 'Todo{ode',
+      mensaje: 'Nuevos recursos de programación disponibles',
+      logoURL:
+        'https://th.bing.com/th/id/R.5d8589a69e149f08510729c1850ba32f?rik=3NiwSNpxwV2ENg&pid=ImgRaw&r=0',
       fecha: 'Hace 2 días',
     },
     {
-      nombre: 'Viajeros por el Mundo',
+      nombre: 'Netflix',
       mensaje: 'Fotos increíbles de mi último viaje a Asia',
-      logoURL: 'https://source.unsplash.com/50x50/?travel',
+      logoURL:
+        'https://static.vecteezy.com/system/resources/previews/017/396/814/original/netflix-mobile-application-logo-free-png.png',
       fecha: 'Hace 3 días',
     },
   ];

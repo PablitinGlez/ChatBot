@@ -1,7 +1,18 @@
-:root {
-    --ion-item-background: #f4f4f4;
-    /* Cambia este color */
-}.mi-item {
-    --background: #d1e7dd !important;
-    /* Color de fondo */
+:host {
+    display: block;
+    width: 120px;
+    height: 180px;
+    margin: 8px;
+ 
 }
+
+ion-item {
+    --background: var(--ion-color-primary);
+}
+
+ion-item{
+    margin: 10px;
+}
+
+
+

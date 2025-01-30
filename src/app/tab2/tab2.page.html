@@ -16,8 +16,9 @@
 
 <ion-content [fullscreen]="true">
   <!-- Lista de Estados -->
+   <ion-title>Estados</ion-title>
   <ion-list class="lista-estados">
-     <ion-title>Estados</ion-title>
+     
     <ion-item *ngFor="let estado of estados" class="estado">
       <div class="estado-container" [style.backgroundImage]="'url(' + estado.estadoURL + ')'">
         <ion-avatar class="estado-avatar">
@@ -26,7 +27,7 @@
       </div>
       <ion-label class="estado-nombre">
         <strong>{{ estado.username }}</strong>
-        <p class="fecha-estado">{{ estado.fecha }}</p>
+       
       </ion-label>
     </ion-item>
   </ion-list>
