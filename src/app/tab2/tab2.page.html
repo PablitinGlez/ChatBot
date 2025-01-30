@@ -1,17 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Novedades</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Lista de Estados -->
+  <ion-list class="lista-estados">
+     <ion-title>Estados</ion-title>
+    <ion-item *ngFor="let estado of estados" class="estado">
+      <div class="estado-container" [style.backgroundImage]="'url(' + estado.estadoURL + ')'">
+        <ion-avatar class="estado-avatar">
+          <img [src]="estado.avatarURL" alt="Estado de {{ estado.username }}" />
+        </ion-avatar>
+      </div>
+      <ion-label class="estado-nombre">
+        <strong>{{ estado.username }}</strong>
+        <p class="fecha-estado">{{ estado.fecha }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- Lista de Comunidades -->
+  <ion-list class="lista-comunidades">
+     <ion-title>Canales</ion-title>
+    <ion-item *ngFor="let comunidad of comunidades" class="comunidad">
+      <ion-avatar slot="start">
+        <img [src]="comunidad.logoURL" alt="Logo de {{ comunidad.nombre }}" />
+      </ion-avatar>
+      <ion-label>
+        <strong>{{ comunidad.nombre }}</strong>
+        <br>
+        <ion-note color="medium" class="ion-text-wrap">{{ comunidad.mensaje }}</ion-note>
+      </ion-label>
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-note color="medium">{{ comunidad.fecha }}</ion-note>
+      </div>
+    </ion-item>
+  </ion-list>
 </ion-content>

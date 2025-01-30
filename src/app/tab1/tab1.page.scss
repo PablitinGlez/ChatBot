@@ -28,12 +28,7 @@ ion-content {
 }
 
 /* Establecer el color de fondo de ion-list */
-ion-list {
-    --background: #0B1014;
-    --color: white;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+
 
 /* Establecer el color de fondo del ion-searchbar a un gris suave */
 ion-searchbar {
@@ -65,4 +60,21 @@ ion-badge {
 }
 ion-header {
     box-shadow: none !important;
+}
+
+
+// En tu archivo tab1.page.scss
+ion-content {
+    ion-list {
+        background: var(--ion-color-primary) !important;
+
+        &::part(native) {
+            background: var(--ion-color-primary) !important;
+        }
+    }
+}
+
+// También necesitas aplicar el estilo a los items dentro de la lista
+ion-item {
+    --background: var(--ion-color-primary) !important;
 }
