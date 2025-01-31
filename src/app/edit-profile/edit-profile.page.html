@@ -1,13 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>edit-profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Editar Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">edit-profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-container">
+    <div class="avatar-wrapper">
+      <ion-avatar class="avatar">
+        <img src="https://th.bing.com/th/id/OIP.ELonA0BHA5D4ASB1ptgC-QHaGk?rs=1&pid=ImgDetMain" alt="Avatar">
+      </ion-avatar>
+      <ion-button class="camera-button" fill="solid" color="success">
+        <ion-icon name="camera"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-input label="Nombre" placeholder="Tu nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      <ion-input label="Info." placeholder="Tu estado"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-input label="Teléfono" placeholder="+52 271 178 4389"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="primary">Guardar Cambios</ion-button>
 </ion-content>
