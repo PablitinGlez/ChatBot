@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { MenuPopoverComponent } from '../menu-popover/menu-popover.component';
 
 @Component({
   selector: 'app-tab1',
@@ -7,7 +9,32 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab1Page {
-  constructor() {}
+  constructor(private popoverCtrl: PopoverController) {}
+
+  async presentPopover(ev: any) {
+    const popover = await this.popoverCtrl.create({
+      component: MenuPopoverComponent,
+      event: ev,
+      translucent: true,
+    });
+
+    await popover.present();
+
+    const { data } = await popover.onDidDismiss();
+    if (data) {
+      switch (data) {
+        case 'ajustes':
+          console.log('Ir a ajustes');
+          break;
+        case 'archivar':
+          console.log('Mostrar archivados');
+          break;
+        case 'perfil':
+          console.log('Ir al perfil');
+          break;
+      }
+    }
+  }
   //arreglo de los charts
   chats = [
     {

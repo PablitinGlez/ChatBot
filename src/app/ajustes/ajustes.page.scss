@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 4;
+}
+
+ion-icon {
+    width: 30px;
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+ion-toolbar {
+    --background: #0B1014;
+    --color: white;
+    /* Para el texto */
+}
+
+/* Establecer el color de fondo del ion-content */
+ion-content {
+    --background: #0B1014;
+    --color: white;
+    /* Para el texto */
+}
+
+/* Establecer el color de fondo de ion-list */
+
+
+/* Establecer el color de fondo del ion-searchbar a un gris suave */
+ion-searchbar {
+    --background: #333232;
+    /* Gris claro */
+    --border-radius: 20px;
+    width: 90%;
+    --placeholder-color: #666666;
+    /* Gris oscuro para el texto del placeholder */
+    --color: #333333;
+    /* Gris oscuro para el texto */
+    --border-color: #ccc;
+    /* Color de borde gris */
+    color: #333333 !important;
+    /* Asegura que el texto del searchbar sea gris oscuro */
+}
+
+ion-badge {
+    --background: #333232 !important;
+    /* Gris oscuro similar al searchbar */
+    --color: rgb(107, 107, 107);
+    /* Color del texto blanco */
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    /* Agregar padding alrededor del texto */
+}
+
+ion-header {
+    box-shadow: none !important;
+}
+
+
+// En tu archivo tab1.page.scss
+ion-content {
+    ion-list {
+        background: var(--ion-color-primary) !important;
+
+        &::part(native) {
+            background: var(--ion-color-primary) !important;
+        }
+    }
+}
+
+// También necesitas aplicar el estilo a los items dentro de la lista
+ion-item {
+    --background: var(--ion-color-primary) !important;
+}

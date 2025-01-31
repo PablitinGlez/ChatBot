@@ -5,8 +5,8 @@
         <ion-icon slot="icon-only" name="camera"> </ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-buttons slot="primary">
-      <ion-button>
+   <ion-buttons slot="primary">
+      <ion-button (click)="presentPopover($event)">
         <ion-icon
           slot="icon-only"
           ios="ellipsis-horizontal"
