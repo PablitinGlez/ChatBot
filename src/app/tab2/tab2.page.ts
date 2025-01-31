@@ -17,21 +17,21 @@ export class Tab2Page {
         'https://th.bing.com/th/id/OIP.mO71r1oZ1wgIRf5RMR2VfwHaEo?rs=1&pid=ImgDetMain',
     },
     {
-      username: 'María',
+      username: 'Pou',
       fecha: 'Hoy, 10:30 AM',
       avatarURL: 'https://cdn-icons-png.flaticon.com/512/147/147135.png',
       estadoURL:
         'https://th.bing.com/th/id/OIP.TMNjzzPu23FYRPfuQkmK-wHaE8?rs=1&pid=ImgDetMain',
     },
     {
-      username: 'Carlos',
+      username: 'Mom',
       fecha: 'Ayer, 8:15 PM',
       avatarURL: 'https://cdn-icons-png.flaticon.com/512/147/147140.png',
       estadoURL:
         'https://th.bing.com/th/id/R.7d1f8b9d5e8b9d324479375f38ffc121?rik=jGk%2b6gxBDnSXCA&pid=ImgRaw&r=0',
     },
     {
-      username: 'Ana',
+      username: 'Dad',
       fecha: 'Ayer, 6:45 PM',
       avatarURL:
         'https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png',

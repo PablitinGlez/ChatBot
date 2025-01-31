@@ -15,11 +15,31 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list class="lista-llamadas">
+    <ion-item *ngFor="let llamada of llamadas">
+      <ion-avatar slot="start">
+        <img [src]="llamada.avatarURL" alt="Avatar de {{ llamada.username }}" />
+      </ion-avatar>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-label>
+        <strong>{{ llamada.username }}</strong>
+        <br>
+        <p class="detalle-llamada">
+          <ion-icon 
+            [name]="llamada.tipo === 'perdida' ? 'arrow-down-outline' : 'arrow-up-outline'"
+            [color]="llamada.tipo === 'perdida' ? 'danger' : 'success'">
+          </ion-icon>
+          {{ llamada.hora }} 
+          
+         
+        </p>
+      </ion-label>
+
+      <div class="metadata-end-wrapper" slot="end">
+        <ion-button fill="clear" color="primary">
+          <ion-icon [name]="llamada.tipo === 'video' ? 'videocam-outline' : 'call-outline'"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-item>
+  </ion-list>
 </ion-content>

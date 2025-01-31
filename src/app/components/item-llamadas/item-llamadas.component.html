@@ -1,0 +1,27 @@
+<ion-item *ngFor="let llamada of llamadas">
+  <ion-avatar slot="start">
+    <img [src]="llamada.avatarURL" alt="Avatar de {{ llamada.username }}" />
+  </ion-avatar>
+
+  <ion-label>
+    <strong>{{ llamada.username }}</strong>
+    <br>
+    <p class="detalle-llamada">
+      <ion-icon 
+        [name]="llamada.tipo === 'perdida' ? 'arrow-down-outline' : 'arrow-up-outline'"
+        [color]="llamada.tipo === 'perdida' ? 'danger' : 'success'">
+      </ion-icon>
+      {{ llamada.hora }}
+    </p>
+  </ion-label>
+
+  <div class="metadata-end-wrapper" slot="end">
+    <!-- Solo el ícono, sin el texto de videollamada o llamada -->
+    <ion-button fill="clear" color="primary" *ngIf="llamada.tipo === ''">
+      <ion-icon name="videocam-outline"></ion-icon>
+    </ion-button>
+    <ion-button fill="clear" color="primary" *ngIf="llamada.tipo !== 'video'">
+      <ion-icon name="call-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-item>

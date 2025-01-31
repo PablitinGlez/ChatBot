@@ -1,0 +1,36 @@
+ion-content {
+    --background: #0B1014;
+    --color: white;
+}
+
+ion-list {
+    background: var(--ion-color-primary) !important;
+}
+
+ion-item {
+    --background: var(--ion-color-primary) !important;
+    --border-color: transparent !important;
+}
+
+.detalle-llamada {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--ion-color-medium);
+}
+
+.detalle-llamada ion-icon {
+    margin-right: 5px;
+}
+
+.metadata-end-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Esto asegura que el icono esté al final */
+}
+
+.metadata-end-wrapper ion-icon {
+    color: white;
+    /* Color blanco para el icono al final */
+}
